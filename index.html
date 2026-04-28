@@ -2,213 +2,131 @@
 <html>
  <head>
   <meta charset="utf-8"/>
-  <meta class="jsx-3903144638" content="initial-scale=1.0, maximum-scale=1, width=device-width" name="viewport"/>
-  <meta content="2" name="next-head-count"/>
-  <style>
-    body {
-      background-image: url('bg.png');
-      background-repeat: repeat;
-  }
-
-  /* Fancy Hover Animations */
-
-  /* Wave animation for emoji */
-  @keyframes wave {
-    0% { transform: rotate(0deg); }
-    5% { transform: rotate(8deg); }
-    10% { transform: rotate(-6deg); }
-    15% { transform: rotate(8deg); }
-    20% { transform: rotate(-6deg); }
-    25% { transform: rotate(6deg); }
-    30% { transform: rotate(-4deg); }
-    35% { transform: rotate(4deg); }
-    40% { transform: rotate(-2deg); }
-    45% { transform: rotate(2deg); }
-    50% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
-  }
-
-  .pages__EmojiIcon-sc-15ohfkm-2:hover {
-    animation: wave 1.2s ease-in-out;
-    cursor: pointer;
-    display: inline-block;
-    transform-origin: 70% 70%;
-  }
-
-  /* Gradient animation for title */
-  @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  .pages__Title-sc-15ohfkm-3 {
-    transition: all 0.3s ease;
-  }
-
-  .pages__Title-sc-15ohfkm-3:hover {
-    background: linear-gradient(45deg, #007AFF, #FF2D55, #AF52DE, #007AFF);
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: gradientShift 3s ease infinite;
-    cursor: default;
-  }
-
-  /* Lift effect for subtitle */
-  .pages__Subtitle-sc-15ohfkm-4 {
-    transition: all 0.3s ease;
-  }
-
-  .pages__Subtitle-sc-15ohfkm-4:hover {
-    transform: translateY(-2px);
-    color: #555555;
-  }
-
-  /* List item hover effects */
-  .pages__Bullet-sc-15ohfkm-6 {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    padding-left: 0;
-  }
-
-  .pages__Bullet-sc-15ohfkm-6:hover {
-    transform: translateX(10px);
-    color: #007AFF;
-  }
-
-  /* Enhanced link animations */
-  .pages__InlineLink-sc-15ohfkm-10 {
-    position: relative;
-    transition: all 0.3s ease;
-  }
-
-  .pages__InlineLink-sc-15ohfkm-10:hover {
-    opacity: 1 !important;
-    transform: translateY(-2px);
-    border-bottom-color: transparent;
-  }
-
-  .pages__InlineLink-sc-15ohfkm-10::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -1px;
-    left: 0;
-    background: linear-gradient(90deg, #007AFF, #FF2D55);
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease;
-  }
-
-  .pages__InlineLink-sc-15ohfkm-10:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-
-
-  /* Social links pulse effect */
-  .pages__SocialLink-sc-15ohfkm-12 {
-    transition: all 0.3s ease;
-  }
-
-  .pages__SocialLink-sc-15ohfkm-12:hover {
-    transform: scale(1.1);
-    font-weight: bold;
-  }
-
-  /* Add smooth transitions to all interactive elements */
-  * {
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  </style>
+  <meta content="initial-scale=1.0, maximum-scale=1, width=device-width" name="viewport"/>
   <title>Yuuki Hosokawa</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <noscript data-n-css="">
-  </noscript>
-  <script defer="" nomodule="" src="/_next/static/chunks/polyfills-0d1b80a048d4787e.js">
-  </script>
-  <style id="__jsx-3903144638">
-   @font-face{font-family:'Lato';src:url('Lato-Regular.ttf');}@font-face{font-family:'LatoBold';src:url('Lato-Bold.ttf');}html,body{padding:0;margin:0;font-family:Lato;}*{box-sizing:border-box;}
-  </style>
-  <style data-styled="" data-styled-version="5.3.5">
-   .hrJPcw{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#F5F5F5;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;min-height:100vh;}/*!sc*/
-data-styled.g1[id="pages__Container-sc-15ohfkm-0"]{content:"hrJPcw,"}/*!sc*/
-.gXKTyM{-webkit-align-items:left;-webkit-box-align:left;-ms-flex-align:left;align-items:left;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:1;-ms-flex:1;flex:1;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;margin-left:24px;margin-right:24px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}/*!sc*/
-data-styled.g2[id="pages__Main-sc-15ohfkm-1"]{content:"gXKTyM,"}/*!sc*/
-.gFUjmi{font-family:LatoBold;font-size:44px;line-height:1;margin-top:0px;margin-bottom:16px;text-align:left;}/*!sc*/
-data-styled.g3[id="pages__EmojiIcon-sc-15ohfkm-2"]{content:"gFUjmi,"}/*!sc*/
-.gKkrMo{font-family:LatoBold;font-size:34px;line-height:1;margin-top:0px;margin-bottom:0px;text-align:left;}/*!sc*/
-data-styled.g4[id="pages__Title-sc-15ohfkm-3"]{content:"gKkrMo,"}/*!sc*/
-.cTsRbl{color:#919191;font-family:Lato;font-size:16px;line-height:1;margin-top:8px;margin-bottom:0px;text-align:left;}/*!sc*/
-data-styled.g5[id="pages__Subtitle-sc-15ohfkm-4"]{content:"cTsRbl,"}/*!sc*/
-.FqOBI{-webkit-align-items:left;-webkit-box-align:left;-ms-flex-align:left;align-items:left;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:none;-ms-flex:none;flex:none;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:left;-webkit-justify-content:left;-ms-flex-pack:left;justify-content:left;margin-top:24px;margin-bottom:0px;}/*!sc*/
-data-styled.g6[id="pages__BulletedList-sc-15ohfkm-5"]{content:"FqOBI,"}/*!sc*/
-.eGHaSj{color:#000000;font-family:Lato;font-size:16px;line-height:1.8;margin-top:0px;margin-bottom:0px;text-align:left;}/*!sc*/
-data-styled.g7[id="pages__Bullet-sc-15ohfkm-6"]{content:"eGHaSj,"}/*!sc*/
-.eNnZCd{list-style-type:"👨‍🔬 ";}/*!sc*/
-data-styled.g8[id="pages__PrimerBullet-sc-15ohfkm-7"]{content:"eNnZCd,"}/*!sc*/
-.cQNkjD{list-style-type:"🦧 ";}/*!sc*/
-data-styled.g9[id="pages__SubstackBullet-sc-15ohfkm-8"]{content:"cQNkjD,"}/*!sc*/
-.bVHhiM{list-style-type:"⛩️ ";}/*!sc*/
-data-styled.g10[id="pages__LocationBullet-sc-15ohfkm-9"]{content:"bVHhiM,"}/*!sc*/
-.iUezyI{color:#007AFF;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#007AFF;font-family:Lato;font-size:16px;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
-.iUezyI:link{color:#007AFF;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#007AFF;font-family:Lato;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
-.iUezyI:hover{opacity:0.75;-webkit-transition:border-color 170ms ease-out;-moz-transition:border-color 170ms ease-out;-ms-transition:border-color 170ms ease-out;-o-transition:border-color 170ms ease-out;-webkit-transition:border-color 170ms ease-out;transition:border-color 170ms ease-out;}/*!sc*/
-.iUezyI:active{opacity:0.5;-webkit-transition:border-color 170ms ease-out;-moz-transition:border-color 170ms ease-out;-ms-transition:border-color 170ms ease-out;-o-transition:border-color 170ms ease-out;-webkit-transition:border-color 170ms ease-out;transition:border-color 170ms ease-out;}/*!sc*/
-data-styled.g11[id="pages__InlineLink-sc-15ohfkm-10"]{content:"iUezyI,"}/*!sc*/
-.pTmDq{border-top-style:solid;border-top-width:1px;border-top-color:#919191;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-top:16px;padding-top:16px;-webkit-box-pack:left;-webkit-justify-content:left;-ms-flex-pack:left;justify-content:left;}/*!sc*/
-data-styled.g12[id="pages__Row-sc-15ohfkm-11"]{content:"pTmDq,"}/*!sc*/
-.geWtTi{font-size:12px;margin-right:16px;}/*!sc*/
-data-styled.g13[id="pages__SocialLink-sc-15ohfkm-12"]{content:"geWtTi,"}/*!sc*/
+  <style>
+    html, body {
+      padding: 0;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #1d1d1f;
+      background-color: #faf8f5;
+    }
+
+    * { box-sizing: border-box; }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+    }
+
+    .main {
+      width: 100%;
+      max-width: 480px;
+    }
+
+    .greeting {
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin: 0 0 12px 0;
+      color: #1d1d1f;
+      display: inline-block;
+      cursor: default;
+      transition: color 400ms ease, letter-spacing 400ms ease;
+    }
+
+    .greeting:hover {
+      color: #86755f;
+      letter-spacing: 0.01em;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 0;
+      color: #86868b;
+      letter-spacing: -0.01em;
+    }
+
+    .list {
+      list-style: none;
+      padding: 0;
+      margin: 32px 0 0 0;
+    }
+
+    .list li {
+      font-size: 15px;
+      line-height: 1.5;
+      padding: 10px 14px;
+      margin: 0 -14px;
+      border-radius: 8px;
+      color: #1d1d1f;
+      transition: background-color 250ms ease, color 250ms ease;
+    }
+
+    .list li:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    .list li .label {
+      color: #86868b;
+      margin-right: 6px;
+    }
+
+    a {
+      color: #1d1d1f;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(29, 29, 31, 0.25);
+      transition: border-color 250ms ease;
+    }
+
+    a:hover {
+      border-bottom-color: #1d1d1f;
+    }
+
+    .row {
+      display: flex;
+      gap: 20px;
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .row a {
+      font-size: 13px;
+      color: #86868b;
+      border-bottom: none;
+      transition: color 250ms ease;
+    }
+
+    .row a:hover {
+      color: #1d1d1f;
+    }
   </style>
  </head>
  <body>
-  <div id="__next">
-   <div class="jsx-3903144638">
-    <div class="pages__Container-sc-15ohfkm-0 hrJPcw">
-     <div class="pages__Main-sc-15ohfkm-1 gXKTyM">
-      <p class="pages__EmojiIcon-sc-15ohfkm-2 gFUjmi">
-       👋
-      </p>
-      <p class="pages__Title-sc-15ohfkm-3 gKkrMo">
-       Ciao! I'm Yuuki.
-      </p>
-      <p class="pages__Subtitle-sc-15ohfkm-4 cTsRbl">
-       I'm passionate about longevity, art, biotech, and flying.
-      </p>
-      <ul class="pages__BulletedList-sc-15ohfkm-5 FqOBI">
-       <li class="pages__Bullet-sc-15ohfkm-6 pages__PrimerBullet-sc-15ohfkm-7 eGHaSj eNnZCd">
-        Researcher at
-        <a class="pages__InlineLink-sc-15ohfkm-10 iUezyI" href="https://retro.bio/" target="blank">
-         Retro
-        </a>
-       </li>
-       <li class="pages__Bullet-sc-15ohfkm-6 pages__SubstackBullet-sc-15ohfkm-8 eGHaSj cQNkjD">
-        Writer at
-        <a class="pages__InlineLink-sc-15ohfkm-10 iUezyI" href="https://yuukihosokawa.substack.com/" target="blank">
-         Pongo Protocols
-        </a>
-       </li>
-       <li class="pages__Bullet-sc-15ohfkm-6 pages__LocationBullet-sc-15ohfkm-9 eGHaSj bVHhiM">
-        Living in Belmont, CA
-       </li>
-      </ul>
-      <div class="pages__Row-sc-15ohfkm-11 pTmDq">
-       <a class="pages__InlineLink-sc-15ohfkm-10 pages__SocialLink-sc-15ohfkm-12 iUezyI geWtTi" href="https://x.com/yuukihosok" target="blank">
-        Twitter
-       </a>
-       <a class="pages__InlineLink-sc-15ohfkm-10 pages__SocialLink-sc-15ohfkm-12 iUezyI geWtTi" href="https://www.linkedin.com/in/yuukihosokawa/" target="blank">
-        LinkedIn
-       </a>
-      </div>
-     </div>
+  <div class="container">
+   <div class="main">
+    <h1 class="greeting">Ciao, I'm Yuuki.</h1>
+    <p class="subtitle">Passionate about longevity, art, biotech, and flying.</p>
+    <ul class="list">
+     <li><span class="label">Researcher at</span><a href="https://retro.bio/" target="_blank">Retro</a></li>
+     <li><span class="label">Writer at</span><a href="https://yuukihosokawa.substack.com/" target="_blank">Pongo Protocols</a></li>
+     <li><span class="label">Living in</span>Belmont, CA</li>
+    </ul>
+    <div class="row">
+     <a href="https://x.com/yuukihosok" target="_blank">Twitter</a>
+     <a href="https://www.linkedin.com/in/yuukihosokawa/" target="_blank">LinkedIn</a>
     </div>
    </div>
   </div>
-  <script id="__NEXT_DATA__" type="application/json">
-   {"props":{"pageProps":{}},"page":"/","query":{},"buildId":"z_heCInURa_y6avW2mh3O","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}
-  </script>
  </body>
 </html>
