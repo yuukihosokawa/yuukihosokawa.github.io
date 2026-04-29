@@ -22,20 +22,27 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 48px 24px;
+      padding: 64px 24px;
     }
 
     .main {
       width: 100%;
-      max-width: 480px;
+      max-width: 460px;
+    }
+
+    .wave {
+      font-size: 40px;
+      line-height: 1;
+      margin: 0 0 16px 0;
+      display: inline-block;
     }
 
     .greeting {
-      font-size: 32px;
+      font-size: 30px;
       font-weight: 600;
       letter-spacing: -0.02em;
-      line-height: 1.15;
-      margin: 0 0 12px 0;
+      line-height: 1.2;
+      margin: 0 0 24px 0;
       color: #1d1d1f;
       display: inline-block;
       cursor: default;
@@ -44,13 +51,13 @@
 
     .greeting:hover {
       color: #86755f;
-      letter-spacing: 0.01em;
+      letter-spacing: -0.015em;
     }
 
     .subtitle {
       font-size: 15px;
       font-weight: 400;
-      line-height: 1.5;
+      line-height: 1.55;
       margin: 0;
       color: #86868b;
       letter-spacing: -0.01em;
@@ -59,21 +66,27 @@
     .list {
       list-style: none;
       padding: 0;
-      margin: 32px 0 0 0;
+      margin: 12px 0 0 0;
     }
 
     .list li {
       font-size: 15px;
       line-height: 1.5;
-      padding: 10px 14px;
+      padding: 12px 14px;
       margin: 0 -14px;
-      border-radius: 8px;
+      border-radius: 10px;
       color: #1d1d1f;
-      transition: background-color 250ms ease, color 250ms ease;
+      transition: background-color 250ms ease;
     }
 
     .list li:hover {
       background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    .list li .emoji {
+      display: inline-block;
+      width: 24px;
+      margin-right: 10px;
     }
 
     .list li .label {
@@ -94,9 +107,9 @@
 
     .row {
       display: flex;
-      gap: 20px;
-      margin-top: 32px;
-      padding-top: 20px;
+      gap: 22px;
+      margin-top: 0;
+      padding-top: 12px;
       border-top: 1px solid rgba(0, 0, 0, 0.08);
     }
 
@@ -115,12 +128,13 @@
  <body>
   <div class="container">
    <div class="main">
+    <p class="wave">👋</p>
     <h1 class="greeting">Ciao, I'm Yuuki.</h1>
-    <p class="subtitle">Passionate about longevity, art, biotech, and flying.</p>
+    <p class="subtitle">Passionate about longevity, art, biotech, and lifting.</p>
     <ul class="list">
-     <li><span class="label">Researcher at</span><a href="https://retro.bio/" target="_blank">Retro</a></li>
-     <li><span class="label">Writer at</span><a href="https://yuukihosokawa.substack.com/" target="_blank">Pongo Protocols</a></li>
-     <li><span class="label">Living in</span>Belmont, CA</li>
+     <li><span class="emoji">👨‍🔬</span><span class="label">Researcher at</span><a href="https://retro.bio/" target="_blank">Retro</a></li>
+     <li><span class="emoji">🦧</span><span class="label">Writer at</span><a href="https://yuukihosokawa.substack.com/" target="_blank">Pongo Protocols</a></li>
+     <li><span class="emoji">⛩️</span><span class="label">Living in</span>Belmont, CA</li>
     </ul>
     <div class="row">
      <a href="https://x.com/yuukihosok" target="_blank">Twitter</a>
